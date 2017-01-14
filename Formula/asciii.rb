@@ -1,10 +1,11 @@
 class Asciii < Formula
   homepage "https://github.com/ascii-dresden/asciii"
-  url "https://github.com/ascii-dresden/asciii/archive/3.0.0.tar.gz"
-  sha256 "cfeb5acc2c7960ab0136df8748e37463fe5df2310240695a1190199be0de54f6"
+  url "https://github.com/ascii-dresden/asciii/releases/download/3.0.2/asciii_macOS.zip"
+  sha256 "0bb642544f6c2a30547e3242359e5ecb4959d3316619eeb754e4642926554d95"
 
   def install
-    system 'cargo', 'install'
+    # system "unzip", "ascii_macOS.zip"
+    bin.install "asciii"
   end
 
   test do
