@@ -4,7 +4,6 @@ class Asciii < Formula
   sha256 "0bb642544f6c2a30547e3242359e5ecb4959d3316619eeb754e4642926554d95"
 
   def install
-    # system "unzip", "ascii_macOS.zip"
     bin.install "asciii"
   end
 
